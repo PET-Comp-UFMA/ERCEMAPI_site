@@ -17,7 +17,7 @@
   opacity: 0.5;
 }
 body {
-  background: #fff;
+  background: #f6f7fd;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
@@ -83,7 +83,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #87CEFA;
+  background: #3777e6;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -126,7 +126,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #2f62bb;
+  background: #3777e6;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -324,7 +324,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2f62bb;
+  background-color: #3777e6;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -711,7 +711,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 span {
-  color:#87CEFA;
+  color:#3777e6;
 }
 
 #intro p {
@@ -723,7 +723,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#87CEFA 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(#3777e6 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -808,7 +808,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #87CEFA;
+  border: 2px solid #3777e6;
 }
 
 #intro-2 .about-btn:hover {
@@ -1127,16 +1127,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 40px;
 }
 .faq-whatsapp{
-  background: #51A2A6;
+  background: #3777e6;
   color:white;
 }
 
 .faq-whatsapp:hover{
   text-decoration: none ;
   background: none;
-  color: #51A2A6;
-  border-color: #51A2A6;
-
+  color: #3777e6;
+  border-color: #3777e6;
 }
 
 .card{
