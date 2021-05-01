@@ -176,7 +176,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: white;
+  background: #f6f7fd;
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -420,7 +420,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: #87CEFA;
+  background: #3777e6;
 
   left: -260px;
   width: 260px;
@@ -438,8 +438,12 @@ h6 {
   position: relative;
 }
 
+#mobile-nav ul li .dropdown-item {
+  color: #000;
+}
+
 #mobile-nav ul li a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 17px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -1193,7 +1197,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
+  background: #f6f7fd;
   height: 160px;
 }
 
