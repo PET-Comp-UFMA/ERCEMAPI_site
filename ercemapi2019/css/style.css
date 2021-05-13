@@ -9,6 +9,7 @@
 # General
 --------------------------------------------------------------*/
 
+
 .eduarda{
   border: #000;
 }
@@ -20,6 +21,9 @@ body {
   background: #f6f7fd;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body#body{
