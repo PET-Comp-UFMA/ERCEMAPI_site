@@ -903,6 +903,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+
+/*--------------------------------------------------------------
+# Aviso Section
+--------------------------------------------------------------*/
+
+#aviso {
+  overflow: hidden;
+  position: relative;
+  padding: 60px 0 40px 0;
+}
+
+#aviso h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FF1A1A;
+}
+
+#aviso p {
+  font-size: 14px;
+}
 /*--------------------------------------------------------------
 # Orientações  Section
 --------------------------------------------------------------*/
