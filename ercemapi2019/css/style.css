@@ -1565,18 +1565,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Inscrições Section
 --------------------------------------------------------------*/
-.tabela-inscrições {
-  border-collapse: collapse;
-  font-size: normal;
-  margin: 40px auto;
-  width: 60%;
+#inscriçoes h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-td, th {
-  border: 2px solid #6ec5ff;
-  font-weight: 300;
-  padding: 4px;
-  text-align: center;
+#inscriçoes .tabela_estudante {
+  margin-bottom: 30px;
+}
+
+#inscriçoes .tabela_estudante2 {
+  margin-bottom: 30px;
+}
+
+#inscriçoes .tabela_professor {
+  margin-bottom: 30px;
 }
 
 .btn-subscription {
