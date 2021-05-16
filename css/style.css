@@ -860,7 +860,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/imagem_fundo_sobre.jpg");
+  background-color: #3D4354;
   background-size: cover;
   overflow: hidden;
   position: relative;
