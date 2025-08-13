@@ -4,7 +4,7 @@
     </div> -->
 
     <div>
-        <a href="index.php"><img src="img/banner_centro_2025.jpg" class="img-fluid" id="img-centro"></a>
+        <a href="index.php"><img src="img/banner_centro_2025_2.png" class="img-fluid" id="img-centro"></a>
     </div>
 
     <!-- <div>

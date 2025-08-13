@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 90px;
+  padding: 25px 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #fcf8ec;
+  height: 70px;
+  padding: 15px 0;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  display: flex !important;
+  justify-content: center;
+}
+
+#header.header-scrolled,
+#header.header-fixed {
+  background: #f6f7fd;
+  height: 70px;
+  padding: 15px 0;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);/*sombra do menu de navegação*/
+}
+
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header #logo h1 span {
+  color: #51A2A6;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+}
+

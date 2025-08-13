@@ -13,6 +13,7 @@
   pointer-events: none;
   opacity: 0.5;
 }
+
 body {
   background: #f6f7fd;
   color: #2f3138;
@@ -821,13 +822,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-
-
-
-
-
-
-
 @-webkit-keyframes pulsate-btn {
   0% {
     -webkit-transform: scale(0.6, 0.6);
@@ -1597,6 +1591,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;
 }
+
 /*
 #inscriçoes .tabelas  .tg th{
  
