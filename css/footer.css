@@ -165,4 +165,9 @@
   color: #ddd;
 }
 
-
+footer.fixar-rodape{
+    background: #ffab62;
+    width: 100%;
+    height: 180px;
+    margin-top: auto;
+}

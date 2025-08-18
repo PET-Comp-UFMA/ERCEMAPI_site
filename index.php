@@ -3,7 +3,7 @@
 
 <?php
     $title = "ERCEMAPI";
-    $cssFiles = [];
+    $cssFiles = ['css/index.css'];
     $jsFiles = [];
     include "head.php";
 ?>

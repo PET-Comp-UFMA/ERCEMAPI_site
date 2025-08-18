@@ -3,7 +3,7 @@
 
 <?php
     $title = "Programação - ERCEMAPI";
-    $cssFiles = [];
+    $cssFiles = ['css/programacao.css'];
     $jsFiles = [];
     include "head.php";
 ?>
