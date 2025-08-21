@@ -1,13 +1,5 @@
 jQuery(document).ready(function( $ ) {
 
-  /*$("a[href*='" + location.pathname + "']").click(function(){
-    $(this).addClass("menu-active");
-  });
-  $("a[href*='" + location.pathname + "']").click( function() {
-    $(this).addClass("menu-active");
-  });*/
-  
-
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -21,14 +13,6 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
-  // Header fixed on scroll
-  $(window).scroll(function() {
-      $('#header').addClass('header-scrolled');
-  });
-
-
-  $('#header').addClass('header-scrolled');
-  
 
   // Real view height for mobile devices
   if (window.matchMedia("(max-width: 767px)").matches) {
@@ -53,46 +37,6 @@ jQuery(document).ready(function( $ ) {
     },
     speed: 400
   });
-
-  // Mobile Navigation
-  if ($('#nav-menu-container').length) {
-    var $mobile_nav = $('#nav-menu-container').clone().prop({
-      id: 'mobile-nav'
-    });
-    $mobile_nav.find('> ul').attr({
-      'class': '',
-      'id': ''
-    });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
-    $('body').append('<div id="mobile-body-overly"></div>');
-    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
-
-    $(document).on('click', '.menu-has-children i', function(e) {
-      $(this).next().toggleClass('menu-item-active');
-      $(this).nextAll('ul').eq(0).slideToggle();
-      $(this).toggleClass("fa-chevron-up fa-chevron-down");
-    });
-
-    $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-      $('#mobile-body-overly').toggle();
-    });
-
-    $(document).click(function(e) {
-      var container = $("#mobile-nav, #mobile-nav-toggle");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
-        }
-      }
-    });
-  } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
-    $("#mobile-nav, #mobile-nav-toggle").hide();
-  }
 
   // Smooth scroll for the menu and links with .scrollto classes
   $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
@@ -129,27 +73,135 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  // Gallery carousel (uses the Owl Carousel library)
-  $(".gallery-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    center:true,
-    responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
+  // setupMobileMenu();
+
+  // function setupMobileMenu() {
+  //   const $body = $('body');
+  //   const $btn  = $('.menu-mobile');
+  //   let   $back = $('#mobile-backdrop');
+
+  //   if (!$back.length) {
+  //     $back = $('<div id="mobile-backdrop" aria-hidden="true"></div>').appendTo('body');
+  //   }
+
+  //   // 1) Clique sempre conta no botão (não nos spans)
+  //   $btn.find('*').css('pointer-events','none');
+
+  //   function openMenu() {
+  //     $body.addClass('mobile-open');
+  //     $btn.addClass('is-open').attr('aria-expanded', 'true');
+  //   }
+  //   function closeMenu() {
+  //     $body.removeClass('mobile-open');
+  //     $btn.removeClass('is-open').attr('aria-expanded', 'false');
+  //     $('#nav-menu-container .dropdown')
+  //       .removeClass('open')
+  //       .find('> .submenu-toggle').attr('aria-expanded','false');
+  //   }
+  //   function toggleMenu() { $body.hasClass('mobile-open') ? closeMenu() : openMenu(); }
+
+  //   $btn.on('click', toggleMenu);
+
+  //   // 2) NÃO feche ao clicar no backdrop (como você pediu)
+  //   // $back.on('click', closeMenu);
+
+  //   // (opcional) feche ao clicar em um link do menu:
+  //   $('#nav-menu-container').on('click', 'a', function () { closeMenu(); });
+
+  //   // submenus no mobile
+  //   $('#nav-menu-container').on('click', '.submenu-toggle', function (e) {
+  //     if (!window.matchMedia('(max-width: 991px)').matches) return;
+  //     e.preventDefault();
+  //     const $li = $(this).closest('.dropdown');
+  //     const open = $li.hasClass('open');
+  //     $li.siblings('.dropdown').removeClass('open').find('> .submenu-toggle').attr('aria-expanded','false');
+  //     $li.toggleClass('open', !open);
+  //     $(this).attr('aria-expanded', String(!open));
+  //   });
+
+  //   $(window).on('resize', function () {
+  //     if (window.matchMedia('(min-width: 992px)').matches) closeMenu();
+  //   });
+  // }
+
+
+  setupMobileDrawer();
+
+  function setupMobileDrawer() {
+    const $body = $('body');
+    const $btn  = $('.menu-mobile');
+    $btn.off('click');                        // PATCH: remove binds antigos no botão
+    $btn.find('*').css('pointer-events','none'); // PATCH: clique vai pro botão, não pros spans
+
+
+    // cria overlay do drawer uma vez
+    let $drawer = $('#mobile-drawer');
+    if (!$drawer.length) {
+      $drawer = $(`
+        <div id="mobile-drawer" aria-hidden="true">
+          <nav class="drawer" role="dialog" aria-modal="true">
+            <ul class="drawer-menu"></ul>
+          </nav>
+        </div>
+      `).appendTo('body');
+
+      // clona os itens do seu menu desktop para dentro do drawer
+      $('#nav-menu-container .nav-menu')
+        .children()
+        .clone(true, false)       // copia estrutura (sem duplicar handlers antigos)
+        .appendTo($drawer.find('.drawer-menu'));
     }
-  });
 
-  // Buy tickets select the ticket type on click
-  $('#buy-ticket-modal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget);
-    var ticketType = button.data('ticket-type');
-    var modal = $(this);
-    modal.find('#ticket-type').val(ticketType);
-  })
+    const $menu = $drawer.find('.drawer-menu');
 
-// custom code
-  if ($(window).width() <= 991) {
-    $(".fixed-dropdown").attr("href", "competicoes.html")
+    function open() {
+      $body.addClass('mobile-open');
+      $btn.addClass('is-open').attr('aria-expanded','true');
+    }
+    function close() {
+      $body.removeClass('mobile-open');
+      $btn.removeClass('is-open').attr('aria-expanded','false');
+      // fecha qualquer submenu aberto no drawer
+      $menu.find('.dropdown')
+        .removeClass('open')
+        .find('> .submenu-toggle').attr('aria-expanded','false');
+    }
+
+    // 2) Botão abre/fecha (com preventDefault e stopPropagation)
+    $btn.off('.drawer').on('click.drawer', function(e){
+      e.preventDefault(); e.stopPropagation();
+      $body.hasClass('mobile-open') ? close() : open();
+    });
+
+    // 3) Dropdowns (Chamada, Informações, Pós-evento): delegação no drawer
+    $menu.off('.drawer').on('click.drawer', '.submenu-toggle', function(e){
+      e.preventDefault(); e.stopPropagation();
+      const $li = $(this).closest('.dropdown');
+      const isOpen = $li.hasClass('open');
+
+      // fecha irmãos (efeito acordeão)
+      $li.siblings('.dropdown')
+        .removeClass('open')
+        .find('> .submenu-toggle').attr('aria-expanded','false');
+
+      $li.toggleClass('open', !isOpen);
+      $(this).attr('aria-expanded', String(!isOpen));
+    });
+
+    // 4) (opcional) fechar ao clicar em um link do menu:
+    $menu.on('click.drawer', 'a', function(){ close(); });
+
+    // 5) fechar ao voltar para desktop
+    $(window).off('resize.drawer').on('resize.drawer', function(){
+      if (window.matchMedia('(min-width: 992px)').matches) close();
+    });
+
+    // 6) tecla ESC fecha (qualquer estado)
+    $(document).off('keydown.drawer').on('keydown.drawer', function(e){
+      if (e.key === 'Escape') close();
+    });
   }
+
+
 });
 

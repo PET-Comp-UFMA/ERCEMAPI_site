@@ -3,45 +3,45 @@
 --------------------------------------------------------------*/
 
 .banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 .banner div a {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
 }
 
 .banner div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 545px;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 545px;
+  margin: auto;
 }
 
 #img-esq {
-    width: 16%;
+  width: 16%;
 }
 
 #img-centro {
-    width: 100%;
+  width: 100%;
 }
 
 #img-dir {
-    width: 45%;
+  width: 45%;
 }
 
 
@@ -50,50 +50,18 @@
 --------------------------------------------------------------*/
 
 #header {
-  height: 90px;
-  padding: 25px 0;
   position: relative;
   left: 0;
   top: 0;
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: #fcf8ec;
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-  display: flex !important;
+  display: flex;
   justify-content: center;
-}
-
-#header.header-scrolled,
-#header.header-fixed {
-  background: #f6f7fd;
-  height: 70px;
-  padding: 15px 0;
-  transition: all 0.5s;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);/*sombra do menu de navegação*/
-}
-
-#header #logo h1 {
-  font-size: 36px;
-  margin: 0;
-  padding: 6px 0;
-  line-height: 1;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-#header #logo h1 span {
-  color: #51A2A6;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
 }
 
 #header #logo img {
@@ -102,12 +70,19 @@
   max-height: 50px;
 }
 
+#header .container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 16px;
+}
+
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navigation Menu (desktop)
 --------------------------------------------------------------*/
-
-/* Nav Menu Essentials */
 
 .nav-menu,
 .nav-menu * {
@@ -116,89 +91,29 @@
   list-style: none;
 }
 
-.nav-menu ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  z-index: 99;
+#nav-menu-container {
+  margin: auto;
 }
 
-.nav-menu li {
-  position: relative;
-  white-space: nowrap;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .nav-menu > li {
-  float: left;
+  position: relative;
 }
-
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
-  display: block;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
-
-.nav-menu ul li {
-  min-width: 180px;
-}
-
-/* Nav Menu Arrows */
-
-.sf-arrows .sf-with-ul {
-  padding-right: 30px;
-}
-
-.sf-arrows .sf-with-ul:after {
-  content: "\f107";
-  position: absolute;
-  right: 15px;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-}
-
-.sf-arrows ul .sf-with-ul:after {
-  content: "\f105";
-}
-
-/* Nav Meu Container */
-
-#nav-menu-container {
-  display: flex;
-  justify-content: center;
-}
-
-/* Nav Meu Styling */
 
 .nav-menu a {
   padding: 8px;
   text-decoration: none;
   display: inline-block;
-  color:black;                    /*muda a cor da fonte no menu de navegação*/
+  color: black;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
   outline: none;
-}
-
-.nav-menu button{
-  padding: 8px;
-  text-decoration: none;
-  display: inline-block;
-  color: #1B100A;                    
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  outline: none;
-}
-
-#nav-menu-dropdown:hover{
-  cursor: p;
 }
 
 .nav-menu .menu-active a,
@@ -207,193 +122,282 @@
   cursor: pointer;
 }
 
-.nav-menu > li {
-  margin-left: 8px;
-}
 
-.nav-menu > li > a:before {
+/* Linha de destaque no hover */
+.nav-menu > li > a::before,
+.nav-menu > li > button.submenu-toggle::before {
   content: "";
   position: absolute;
-  width: 0;
-  height: 2px;
+  left: 0; 
   bottom: 0;
-  left: 0;
+  width: 0; 
+  height: 2px;
   background-color: #3777e6;
   visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
+  transition: width .3s ease-in-out, visibility .3s;
 }
 
-.nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu > li:hover > a::before,
+.nav-menu > li:hover > button.submenu-toggle::before,
+.nav-menu > li.menu-active > a::before {
   visibility: visible;
   width: 100%;
 }
 
-.nav-menu li.buy-tickets a {
-  color:  #fcf8ec;
-  background:#3C4858;
-  padding: 7px 22px;
-  border-radius: 50px;
-  border: 2px solid #3C4858;
-  transition: all ease-in-out 0.3s;
-  font-weight: 800;
-  margin-left: 8px;
-  margin-top: 2px;
-  line-height: 1;
-  font-size: 13px;
-}
 
-.nav-menu li.buy-tickets a:hover {
-  background: none;
-  color: #3C4858;
-}
-
-.nav-menu li.buy-tickets:hover a:before,
-.nav-menu li.buy-tickets.menu-active a:before {
-  visibility: hidden;
-}
-
-.nav-menu ul {
+/* Dropdown (desktop) */
+.dropdown .dropdown-menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
   margin: 4px 0 0 0;
   padding: 10px;
+  min-width: 200px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: #fff;
   border-radius: 3px;
 }
 
-.nav-menu ul li {
-  transition: 0.3s;
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
-.nav-menu ul li a {
+.dropdown-menu li {
+  transition: .3s;
+}
+
+.dropdown-menu a{
   padding: 10px;
   color: #060c22;
-  transition: 0.3s;
   display: block;
   font-size: 13px;
-  text-transform: none;
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.dropdown-menu a:hover {
   background: #51A2A6;
   color: #fff;
 }
 
-.nav-menu ul ul {
-  margin: 0;
+.dropdown-menu .dropdown-divider {
+  height: 1px;
+  margin: 3px 0;
+  background: #eee;
 }
 
-/* Mobile Nav Toggle */
+.dropdown > a:after, 
+.dropdown > button.submenu-toggle::after {
+  content: "▾";
+  font-size: 0.95rem;
+  margin-left: 4px;
+}
 
-#mobile-nav-toggle {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  margin: 15px 15px 0 0;
+.submenu-toggle {
+  padding: 8px;
+  background: transparent;
   border: 0;
-  background: none;
-  font-size: 24px;
-  display: none;
-  transition: all 0.4s;
-  outline: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
+  position: relative;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-#mobile-nav-toggle i {
-  color: #3777e6;
-}
+/*--------------------------------------------------------------
+# Menu Mobile
+--------------------------------------------------------------*/
 
-/* Mobile Nav Styling */
-
-#mobile-nav {
+.menu-mobile {
+  display: none; /* escondido no desktop */
   position: fixed;
-  top: 0;
-  padding-top: 18px;
-  bottom: 0;
-  z-index: 998;
-  background: #3777e6;
+  top: 12px;
+  right: 12px;
+  z-index: 1200;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
 
-  left: -260px;
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
 }
 
-#mobile-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#mobile-nav ul li {
-  position: relative;
-}
-
-#mobile-nav ul li .dropdown-item {
-  color: #000;
-}
-
-#mobile-nav ul li a {
-  color: rgb(255, 255, 255);
-  font-size: 17px;
-  overflow: hidden;
-  padding: 10px 22px 10px 15px;
-  position: relative;
-  text-decoration: none;
-  width: 100%;
+.menu-mobile span {
   display: block;
-  outline: none;
+  width: 24px;
+  height: 2px;
+  background: #1B100A;
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .2s ease;
 }
 
-#mobile-nav ul li a:hover {
-  color: #b196cf;;
+/* “X” no hambúrguer quando aberto */
+.menu-mobile.is-open span:nth-child(1) { 
+  transform: translateY(8px) rotate(45deg); 
 }
 
-#mobile-nav ul li li {
-  padding-left: 30px;
+.menu-mobile.is-open span:nth-child(2) { 
+  opacity: 0; 
 }
 
-#mobile-nav ul .menu-has-children i {
-  position: absolute;
-  right: 0;
-  z-index: 99;
-  padding: 15px;
-  cursor: pointer;
-  color: #fff;
+.menu-mobile.is-open span:nth-child(3) { 
+  transform: translateY(-8px) rotate(-45deg); 
 }
 
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #87CEFA;
-}
+/* ===== Drawer mobile independente ===== */
 
-#mobile-nav ul .menu-item-active {
-  color:#87CEFA;
-}
-
-#mobile-body-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
+/* fundo escurecido do site (sempre atrás do header/nav) */
+#mobile-drawer {
   position: fixed;
-  background: rgba(6, 12, 34, 0.8);
-  display: none;
+  inset: 0;
+  z-index: 1400;                 /* abaixo do botão; acima do site */
+  display: none;                 /* abre com body.mobile-open */
+  pointer-events: none;          /* PATCH: overlay não captura cliques */
 }
 
-/* Mobile Nav body classes */
-
-body.mobile-nav-active {
-  overflow: hidden;
+#mobile-drawer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.35);   /* PATCH: menos escuro */
+  opacity: 0;
+  transition: opacity .25s ease;
 }
 
-body.mobile-nav-active #mobile-nav {
-  left: 0;
+/* painel lateral (esquerda) */
+#mobile-drawer .drawer {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 78vw;                   /* ~ 4/5 da tela */
+  max-width: 320px;
+  background: #081b4b;           /* azul escuro */
+  box-shadow: 2px 0 24px rgba(0,0,0,.25);
+  overflow-y: auto;
+
+  transform: translateX(-100%);  /* fora da tela inicialmente */
+  transition: transform .25s ease;
+
+  pointer-events: auto;          /* PATCH: painel é que é clicável */
 }
 
-body.mobile-nav-active #mobile-nav-toggle {
+/* lista do menu dentro do painel */
+#mobile-drawer .drawer-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  gap: 2px;
+}
+
+#mobile-drawer .drawer-menu > li { 
+  width: 100%; 
+}
+
+#mobile-drawer .drawer-menu a,
+#mobile-drawer .drawer-menu .submenu-toggle {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  text-align: left;
   color: #fff;
+  cursor: pointer;
 }
+
+#mobile-drawer .drawer-menu a:hover {
+  background: rgba(255,255,255,.08);
+  border-radius: 6px;
+}
+
+/* submenu empilhado no drawer */
+#mobile-drawer .dropdown .dropdown-menu {
+  position: static;
+  display: none;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0 0 6px 10px;        /* leve indentação */
+  text-align: left;
+}
+
+#mobile-drawer .dropdown.open > .dropdown-menu { 
+  display: block !important; 
+}
+
+#mobile-drawer .dropdown > .submenu-toggle::after {
+  content: "▾";
+  margin-left: 6px;
+  color: #fff;
+  transition: transform .2s;
+}
+
+#mobile-drawer .dropdown.open > .submenu-toggle::after { 
+  transform: rotate(180deg); 
+}
+
+/* estado ABERTO */
+body.mobile-open #mobile-drawer { display: block; }
+body.mobile-open #mobile-drawer::before { opacity: 1; }
+body.mobile-open #mobile-drawer .drawer { transform: translateX(0); }
+
+/* botão hambúrguer/X sempre por cima e branco quando aberto */
+@media (max-width: 991px) {
+
+  #header {
+    background: #f6f7fd;
+  }
+
+  /* evita “faixa branca” do header quando o drawer abre */
+  body.mobile-open #header {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .menu-mobile {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    gap: 6px;
+    position: fixed; 
+    top: 12px; 
+    right: 12px; 
+    z-index: 2000;  
+    color: #fff !important;
+  }
+
+  .menu-mobile.is-open span { 
+    background: #000 !important; 
+  }
+}
+
+/* ——— IMPORTANTÍSSIMO: neutralizar seu overlay antigo + esconder menu desktop ——— */
+@media (max-width: 991px) {
+  body.mobile-open #nav-menu-container {
+    position: static !important;
+    inset: auto !important;
+    z-index: auto !important;
+    background: transparent !important;
+    display: block !important;
+    padding-top: 0 !important;
+
+    /* PATCH: esconder o menu desktop ao abrir o drawer */
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* tira a linha decorativa do desktop dentro do mobile */
+  .nav-menu > li > a::before,
+  .nav-menu > li > button.submenu-toggle::before { display: none; }
+}
+
+
