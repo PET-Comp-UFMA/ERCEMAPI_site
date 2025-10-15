@@ -25,7 +25,7 @@
                 <div class="carousel-inner">
                     <div id="intro" class="carousel-item active">
                         <div class="intro-container wow fadeIn">
-                            <h1 class="mb-4 pb-0">ERCEMAPI <span>2025</span><br><span>UFMA</span><br> </h1> 
+                            <h1 class="mb-4 pb-0">XIII Escola Regional de Computação do Ceará, Maranhão, Piauí 04 e 05 de dezembro de 2025</h1>
                             <a href="#about" class="about-btn scrollto">Sobre o Evento</a>
                         </div>
                     </div>
@@ -43,10 +43,16 @@
                         <div class="col-lg-6">
                             <h2>Sobre o Evento</h2>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, assumenda? Corrupti debitis aliquam maxime itaque magnam est, dignissimos temporibus ut. Corporis esse dolore laborum, fugit nesciunt non quos doloremque quae?
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati necessitatibus distinctio fuga impedit dolore blanditiis cumque. Nihil sapiente animi assumenda eum officiis, distinctio aut ex ipsum voluptates eaque corporis?
+                                                    A Escola Regional de Computação do Ceará, Maranhão, Piauí tem como
+                        objetivo disseminar o conhecimento técnico e científico sobre temas e assuntos
+                        de vanguarda na área de Computação, colaborar e contribuir com a
+                        consolidação dos Programas de Pós-Graduação e consolidar-se como um
+                        evento de referência nos Estados do Ceará, Maranhão e Piauí, e Região
+                        Nordeste. As Escolas Regionais são eventos promovidos pela Sociedade
+                        Brasileira de Computação (SBC) e têm como objetivo principal aproximar e
+                        facilitar a presença dos estudantes de graduação e pós-graduação em eventos
+                        da área de computação. 
+
                             </p>
                         </div><center>
                     </div>
