@@ -205,7 +205,33 @@ width: 68%;
     /*height: 30%;*/
 }
 
-/* */
+.img-fluid-style,
+.img-fluid {
+  width: 120px;        
+  height: 120px;      
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto;     
+}
+
+
+.supporter-logo,
+.supporters-wrap .col-lg-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; 
+}
+
+
+.supporters-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px; /
+}
+
+
 .wrapper{
     display: flex;
     flex-direction: column;
