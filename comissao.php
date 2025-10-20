@@ -42,7 +42,7 @@
                 <ol>
                     <strong>Coordenação do Comitê de Programa para Minicursos</strong> <br/>
                     Prof.Dr.Antonio Fernando Lavareda Jacob Junior (UEMA)<br>
-                    Prof.Dra.Atslands Rego da Rocha (UFCE)<br>
+                    Prof.Dra.Atslands Rego da Rocha (UFC)<br>
                     Prof.Dr.Eduilson Lívio Neves da Costa Carneiro (IFPI)<br>
                 </ol>
         
