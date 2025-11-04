@@ -31,10 +31,6 @@
                         <li><a class="dropdown-item" href="artigos.php">Artigos</a></li>
                         <li class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="minicursos_chamada.php">Minicursos</a></li>
-                        <li class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="maratona.php">Maratona</a></li>
-                        <li class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="competitiva.php">Competição</a></li>
                     </ul>
                 </li>
                 

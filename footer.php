@@ -3,7 +3,7 @@
         <div class="footer-info" id="contatos">
             <h4 >Contatos</h4>
             <div id ="email">
-                <strong>E-mail:</strong> xxxxxxxx@gmail.com
+                <strong>E-mail:</strong> ercemapi2025@gmail.com
             </div>
             <div class="social-links">
                 <a href="https://twitter.com/petcompufma" class="twitter"><i class="fa fa-twitter"></i></a>

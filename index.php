@@ -108,16 +108,16 @@
 
                         <div class="col-lg-2 col-md-4 col-xs-6">
                             <div class="supporter-logo">
-                                <a href="https://portais.ufma.br/PortalUfma/index.jsf" target="_blank">
-                                    <img src="img/supporters/ufma.png" class="img-fluid-style" alt="">
+                                <a href="https://www.uema.br/" target="_blank">
+                                   <img src="img/supporters/Uema.png" width="200" height="200" alt="UEMA">
                                 </a>
                             </div>
                         </div>
 
                         <div class="col-lg-2 col-md-4 col-xs-6">
                             <div class="supporter-logo">
-                                <a href="https://deinf.ufma.br" target="_blank">
-                                    <img src="img/supporters/deINF.png" class="img-fluid" alt="">
+                                <a href="https://portais.ufma.br/PortalUfma/index.jsf" target="_blank">
+                                    <img src="img/supporters/ufma.jpg" class="img-fluid" alt="">
                                 </a>
                             </div>
                         </div>

@@ -28,7 +28,7 @@
                 <h3>FORMATO DE SUBMISSÃO DE ARTIGOS</h3>
                 <p>Os artigos devem ser submetidos, seguindo o formato definido pela SBC, disponível em <a href=" https://www.sbc.org.br/documentos-da-sbc/summary/169-
                 templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos">http://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelosparapublicaodeartigos</a>, SEM identificação dos autores. Todos os artigos submetidos passarão por um processo de avaliação duplamente cega (<b>double blind review process</b>) e serão julgados segundo sua relevância técnico-científica, adequação ao evento, estrutura, qualidade do texto, resultados apresentados, dentre outros aspectos.</p>
-                <p>O artigo deverá ser submetido exclusivamente de forma eletrônica pelo sistema JEMS. Alguns aspectos adicionais que devem ser observados quando da preparação e submissão dos artigos:</p>
+                <p>O artigo deverá ser submetido exclusivamente de forma eletrônica pelo sistema JEMS 3(https://jems3.sbc.org.br/events/448)</a>. Alguns aspectos adicionais que devem ser observados quando da preparação e submissão dos artigos:</p>
 
                 <ul>
                     <li>Os artigos utilizarão o template de publicações de artigos da SBC;</li>
