@@ -83,7 +83,7 @@
 
                 <h3>DATAS IMPORTANTES</h3>
                 <p>Calendário de Submissão de artigos</p>
-                <b>Submissão de artigos até:</b> 03/11/2025 (<b>hard deadline</b>)<br>
+                <b>Submissão de artigos até:</b> <s>03/11/2025</s> 09/11/2025 (<b>hard deadline</b>)<br>
                 <b>Notificação aos Autores até:</b> 25/11/2025<br>
                 <b>Envio da Versão Final até:</b> 28/11/2025<br>
                 <b>Envio do Termo de Autorização de Publicação até:</b> 28/11/2025<br>
