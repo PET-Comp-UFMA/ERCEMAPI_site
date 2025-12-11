@@ -28,6 +28,8 @@
                     <ol>
                         <li><strong>Até dia 02/12/2025 (prazo superior a 15 dias e inferior a 30 dias antes da data de início do evento) pode-se fazer uma devolução de 50% do valor pago pela inscrição na ERCEMAPI 2025. Após esta data não haverá devolução de qualquer valor pago. A política se aplica tanto para o cancelamento da inscrição, quanto para o cancelamento de qualquer atividade adicional. Para solicitar o cancelamento, enviar a solicitação para faturamento@sbc.org.br.</strong></li>
                         <br>
+                        <li>As inscrições podem ser feitas pelo site: <a href ="https://centraldesistemas.sbc.org.br/ecos/ercemapi2025">https://centraldesistemas.sbc.org.br/ecos/ercemapi2025</a></li>
+                        <br>
                     </ol>
                 </p>
 
@@ -57,13 +59,13 @@
                     </tr>
                     <tr>
                       <td class="tg-3">Estudante associado à SBC com anuidade vencendo em até 90 dias (COMBO: inscrição no evento + renovação da associação à SBC)</td>
-                      <td class="tg-5">R$ 30,00</td>
-                      <td class="tg-5">R$ 40,00</td>
+                      <td class="tg-5">R$ 63,00</td>
+                      <td class="tg-5">R$ 73,00</td>
                     </tr>
                     <tr>
                       <td class="tg-1">Estudante não associado ou com associação não vigente à SBC (COMBO: inscrição no evento + associação à SBC)</td>
-                      <td class="tg-6">R$ 30,00</td>
-                      <td class="tg-6">R$ 40,00</td>
+                      <td class="tg-6">R$ 63,00</td>
+                      <td class="tg-6">R$ 73,00</td>
                     </tr>
                     <tr>
                       <td class="tg-3">Estudante não associado à SBC (Somente inscrição no evento)</td>
@@ -100,13 +102,13 @@
                     </tr>
                     <tr>
                       <td class="tg-3">Estudante de pós-graduação associado à SBC com anuidade vencendo em até 90 dias (COMBO: inscrição no evento + renovação da associação à SBC)</td>
-                      <td class="tg-5">R$ 50,00</td>
-                      <td class="tg-5">R$ 60,00</td>
+                      <td class="tg-5">R$ 185,00</td>
+                      <td class="tg-5">R$ 195,00</td>
                     </tr>
                     <tr>
                       <td class="tg-1">Estudante de pós-graduação não associado ou com associação não vigente à SBC (COMBO: inscrição no evento + associação à SBC)</td>
-                      <td class="tg-6">R$ 50,00</td>
-                      <td class="tg-6">R$ 60,00</td>
+                      <td class="tg-6">R$ 185,00</td>
+                      <td class="tg-6">R$ 195,00</td>
                     </tr>
                     <tr>
                       <td class="tg-3">Estudante de pós-graduação não associado à SBC (Somente inscrição no evento)</td>
@@ -143,13 +145,13 @@
                     </tr>
                     <tr>
                       <td class="tg-3">Professor de Educação Básica Municipal/Estadual associado à SBC com anuidade vencendo em até 90 dias (COMBO: inscrição no evento + renovação da associação à SBC)</td>
-                      <td class="tg-5">R$ 60,00</td>
-                      <td class="tg-5">R$ 70,00</td>
+                      <td class="tg-5">R$ 195,00</td>
+                      <td class="tg-5">R$ 205,00</td>
                     </tr>
                     <tr>
                       <td class="tg-1">Professor de Educação Básica Municipal/Estadual não associado ou com associação não vigente à SBC (COMBO: inscrição no evento + associação à SBC)</td>
-                      <td class="tg-6">R$ 60,00</td>
-                      <td class="tg-6">R$ 70,00</td>
+                      <td class="tg-6">R$ 195,00</td>
+                      <td class="tg-6">R$ 205,00</td>
                     </tr>
                     <tr>
                       <td class="tg-3">Professor de Educação Básica Municipal/Estadual não associado à SBC (Somente inscrição no evento)</td>
@@ -163,13 +165,13 @@
                     </tr>
                     <tr>
                       <td class="tg-3">Professor de Educação Básica Federal associado à SBC com anuidade vencendo em até 90 dias (COMBO: inscrição no evento + renovação da associação à SBC)</td>
-                      <td class="tg-5">R$ 60,00</td>
-                      <td class="tg-5">R$ 70,00</td>
+                      <td class="tg-5">R$ 430,00</td>
+                      <td class="tg-5">R$ 440,00</td>
                     </tr>
                     <tr>
                       <td class="tg-1">Professor de Educação Básica Federal não associado ou com associação não vigente à SBC (COMBO: inscrição no evento + associação à SBC)</td>
-                      <td class="tg-6">R$ 60,00</td>
-                      <td class="tg-6">R$ 70,00</td>
+                      <td class="tg-6">R$ 430,00</td>
+                      <td class="tg-6">R$ 440,00</td>
                     </tr>
                     <tr>
                       <td class="tg-3">Professor de Educação Básica Federal não associado à SBC (Somente inscrição no evento)</td>
@@ -206,13 +208,13 @@
                     </tr>
                     <tr>
                       <td class="tg-3">Profissional associado à SBC com anuidade vencendo em até 90 dias (COMBO: inscrição no evento + renovação da associação à SBC)</td>
-                      <td class="tg-5">R$ 70,00</td>
-                      <td class="tg-5">R$ 80,00</td>
+                      <td class="tg-5">R$ 445,00</td>
+                      <td class="tg-5">R$ 455,00</td>
                     </tr>
                     <tr>
                       <td class="tg-1">Profissional não associado ou com associação não vigente à SBC (COMBO: inscrição no evento + associação à SBC)</td>
-                      <td class="tg-6">R$ 70,00</td>
-                      <td class="tg-6">R$ 80,00</td>
+                      <td class="tg-6">R$ 445,00</td>
+                      <td class="tg-6">R$ 455,00</td>
                     </tr>
                     <tr>
                       <td class="tg-3">Profissional não associado à SBC (Somente inscrição no evento)</td>

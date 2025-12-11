@@ -10,7 +10,6 @@
 
 <body>
     <div class="wrapper">
-
         <!--==========================
             Header
         ============================-->
@@ -60,8 +59,37 @@
             </section>
 
             <!--====================
-                Aviso
+                LOCAL
             ======================-->
+             <section id="local">
+  <section id="local">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+                <h2>Local do Evento</h2>
+                <p>
+                    Prédio do Curso de engenharia da Computação - Cidade Universitária Paulo VI  - São Cristovao, São Luís - MA
+                </p>
+
+                <!-- Mapa incorporado -->
+                <div style="width: 100%; height: 350px; margin-top: 20px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.6599493367383!2d-44.212443!3d-2.5834966999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69b74faebfacf%3A0x7b51d3fd663371da!2sLAPS%20-%20Laborat%C3%B3rio%20de%20Aquisi%C3%A7%C3%A3o%20e%20Processamento%20de%20Sinais!5e0!3m2!1spt-BR!2sbr!4v1732820000000!5m2!1spt-BR!2sbr"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+                    
 
             <!-- <section id="aviso">
                 <div class="container">

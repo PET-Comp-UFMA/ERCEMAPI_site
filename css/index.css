@@ -40,6 +40,11 @@
   max-width: 100%; 
   height: auto;
 }
+#local .row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 @media only screen and (max-device-width: 991px) {
   .img-fluid-style { 
